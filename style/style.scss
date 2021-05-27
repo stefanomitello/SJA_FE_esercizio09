@@ -1,0 +1,13 @@
+@mixin font($size, $line-height, $weight: 200) {
+
+    font-size: $size+rem;
+    line-height: $line-height;
+    font-weight: $weight;
+}
+
+
+
+.font {
+    @include font(3, 1.5, 600);
+    color: #000000;
+}

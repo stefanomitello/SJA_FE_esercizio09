@@ -1,6 +1,8 @@
+$base: 16;
+
 @mixin font($size, $line-height, $weight: 200) {
 
-    font-size: $size+rem;
+    font-size: ($size / $base)+rem;
     line-height: $line-height;
     font-weight: $weight;
 }
